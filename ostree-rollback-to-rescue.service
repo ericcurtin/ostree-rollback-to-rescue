@@ -8,7 +8,7 @@ Before=cryptsetup.target integritysetup.target remote-fs.target slices.target sw
 
 [Service]
 Type=oneshot
-ExecStart=systemctl --no-block isolate rescue.target
+ExecStart=/usr/sbin/ostree-rollback-to-rescue
 
 [Install]
 WantedBy=sysinit.target

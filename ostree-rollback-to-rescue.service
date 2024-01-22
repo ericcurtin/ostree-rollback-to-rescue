@@ -1,5 +1,5 @@
 [Unit]
-Description=Rollback to rescue
+Description=OSTree rollback to rescue
 DefaultDependencies=no
 OnFailure=emergency.target
 OnFailureJobMode=replace-irreversibly
